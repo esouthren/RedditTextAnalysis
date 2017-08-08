@@ -15,6 +15,7 @@ def getData(url):
 
     # Reject words under 5 characters, URLS, or containing odd characters
     wordsStripped = []
+
     for w in words:
         if len(w) > 5 and not w.startswith('http') and '_' not in w:
             wordsStripped.append(w)

@@ -12,8 +12,8 @@ VALUES = 20
 def main():
 
     # Return array string of words
-    words = getData('csvData/askScience.csv')
 
+    words = getData('csvData/askScience.csv')
     # create dictionary of counted words
     wordCount = Counter(words)
     # new dictionary of top most common values
@@ -45,7 +45,7 @@ def main():
     )]
 
     layout = go.Layout(
-            title='/r/AskScience Word Occurences in Comments - May 2015 (> 5 characters)',
+            title='/r/AskScience Word Occurences in Comments (> 5 characters) - May 2015 ',
             plot_bgcolor='rgba(240,240,240,1)',
             )
 
